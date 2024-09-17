@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\BeerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +18,7 @@ use App\Http\Controllers\PageController;
 Route::get('/',[PageController::class,'index'])->name('home');
 Route::get('/chi-siamo',[PageController::class,'about'])->name('about');
 Route::get('/contattaci',[PageController::class,'contacts'])->name('contacts');
+
+Route::resource('beers', BeerController::class);
 
 
