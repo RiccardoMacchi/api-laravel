@@ -9,7 +9,8 @@
                     <h3 class="card-title">{{ $beer->name }}</h3>
                     <h5>Voto Medio: {{ $beer->average }}</h5>
                     <h5>Prezzo: {{ $beer->price }}</h5>
-                    <a href="{{ route('beers.show', $beer) }}" class="btn btn-warning">Go somewhere</a>
+                    <a href="{{ route('beers.show', $beer) }}" class="btn btn-warning">DETTAGLI</a>
+                    <a href="{{ route('beers.edit', $beer) }}" class="btn btn-warning">MODIFICA</a>
                 </div>
             </div>
         @endforeach

@@ -7,7 +7,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="{{ route('beers.index') }}">Home</a>
+                <a class="nav-link" href="{{ route('beers.index') }}">Le nostre Birre</a>
+                <a class="nav-link" href="{{ route('beers.create') }}">Aggiungi una Birra</a>
             </div>
         </div>
     </div>
